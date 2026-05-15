@@ -7,6 +7,7 @@
     链接：[Download Android Studio & App Tools - Android Developers](https://developer.android.com/studio)  进入下载页面下载即可
 
     <img width="1050" height="364" alt="image" src="https://github.com/user-attachments/assets/31830154-88ee-4c2c-8cc0-615c5240bbf8" />
+<img width="763" height="558" alt="image" src="https://github.com/user-attachments/assets/82b4e0fd-254c-4cb1-9325-9c58533b3972" />
 
 
 2. 标准安装，**安装路径禁止包含中文、空格**
