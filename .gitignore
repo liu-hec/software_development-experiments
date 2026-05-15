@@ -1,12 +1,14 @@
-# Android 官方忽略文件
+# 全局忽略所有子目录下的 gradle/idea/build 文件夹
+**/.gradle/
+**/.idea/
+**/build/
+
+# Android 官方忽略文件（优化版）
 *.iml
-.gradle
-/.idea
 /captures
 .externalNativeBuild
 .cxx
 local.properties
-build/
 !gradle/wrapper/gradle-wrapper.jar
 !/gradlew
 !/gradlew.bat
