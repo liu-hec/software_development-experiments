@@ -8,8 +8,9 @@
 
     <img width="1050" height="364" alt="image" src="https://github.com/user-attachments/assets/31830154-88ee-4c2c-8cc0-615c5240bbf8" />
 
-![Uploading image.png…]()
+<img width="1454" height="647" alt="image" src="https://github.com/user-attachments/assets/8ff5c491-adb5-4504-8004-fe0e810bb70d" />
 
+![Uploading image.png…]()
 
 
 2. 标准安装，**安装路径禁止包含中文、空格**
