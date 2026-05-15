@@ -1,0 +1,16 @@
+# Android 官方忽略文件
+*.iml
+.gradle
+/.idea
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!/gradlew
+!/gradlew.bat
+
+# 系统文件
+.DS_Store
+Thumbs.db
