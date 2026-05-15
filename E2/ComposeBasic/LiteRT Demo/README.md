@@ -4,7 +4,7 @@
 
 ## 一 实验内容：
 
-![image-20260515162657074](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260515162657074.png)
+<img width="1134" height="634" alt="image" src="https://github.com/user-attachments/assets/1a4a61aa-9f59-4607-adf8-a47e2ea4b451" />
 
 
 
@@ -88,7 +88,7 @@ enableEdgeToEdge()
 
 ​    这些内容目前是模拟数据。Icon和Text嵌套在Column中，使其垂直分布。
 
-![image-20260515163053381](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260515163053381.png)
+<img width="792" height="245" alt="image" src="https://github.com/user-attachments/assets/3257b5c6-cc89-4a67-9092-c5ecada2d442" />
 
 ### 4. 按钮交互逻辑
 
@@ -103,7 +103,7 @@ enableEdgeToEdge()
 
 
 
-![image-20260515162944032](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260515162944032.png)
+<img width="1144" height="661" alt="image" src="https://github.com/user-attachments/assets/b1516ec1-acf3-41a9-a593-e58595678c54" />
 
 
 
