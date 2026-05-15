@@ -70,13 +70,13 @@ modifier = Modifier.padding(innerPadding)
 
 被该注解标记的函数只能在在 Compose 上下文，比如 `setContent { ... }` 或其他 `@Composable` 函数里被调用
 
-![image-20260512211330530](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260512211330530.png)
+<img width="1138" height="516" alt="image" src="https://github.com/user-attachments/assets/e7b6e591-fe53-489f-8997-4b454daba99d" />
 
 
 
 ​     可组合函数像其他函数一致，例如下列通过循环显示多个文本内容
 
-![image-20260512211822524](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260512211822524.png)
+<img width="1134" height="313" alt="image" src="https://github.com/user-attachments/assets/1b7a11cf-d640-4bbb-bd04-58ab04e0acc3" />
 
 
 
@@ -94,13 +94,12 @@ showSystemUi 默认false  显示状态栏/导航栏
 
 ​      修改modifier的padding内边距的水平和垂直情况
 
-![image-20260512213031556](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260512213031556.png)
+<img width="1176" height="693" alt="image" src="https://github.com/user-attachments/assets/4b52a440-7dfd-4ebe-925c-f65049122814" />
 
 
 
 添加button
 
-![image-20260512214109319](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260512214109319.png)
 
 ​    普通的变量改变不会被Compose捕捉并更新状态。这样点击文件就会发生改变
 
@@ -110,4 +109,4 @@ showSystemUi 默认false  显示状态栏/导航栏
 
    如果我们将变量修改为布尔值，则可以实现点击的动态变化。初始信息为“change to one”,点击后变成“change to two”,再次点击依次往复
 
-![image-20260512215600055](../AppData/Roaming/Typora/typora-user-images/image-20260512215600055.png)
+<img width="1236" height="520" alt="image" src="https://github.com/user-attachments/assets/5451dcd9-c9dd-4c58-8225-a68d181cf712" />
