@@ -1,18 +1,60 @@
-# 全局忽略所有子目录下的 gradle/idea/build 文件夹
-**/.gradle/
-**/.idea/
+############################
+# Gradle
+############################
+.gradle/
 **/build/
-
-# Android 官方忽略文件（优化版）
-*.iml
-/captures
-.externalNativeBuild
-.cxx
-local.properties
 !gradle/wrapper/gradle-wrapper.jar
-!/gradlew
-!/gradlew.bat
 
-# 系统文件
+############################
+# Local config
+############################
+local.properties
+
+############################
+# Android Studio
+############################
+.idea/
+*.iml
+*.ipr
+*.iws
+
+############################
+# Keystore (超级重要)
+############################
+*.jks
+*.keystore
+*.keystore.properties
+
+############################
+# Log / temp
+############################
+*.log
+*.tmp
+
+############################
+# OS files
+############################
 .DS_Store
 Thumbs.db
+
+############################
+# NDK / CMake
+############################
+.externalNativeBuild/
+.cxx/
+
+############################
+# Captures
+############################
+captures/
+
+############################
+# Generated
+############################
+*/generated/
+
+############################
+# Kotlin
+############################
+*.class
+*.kotlin_module
