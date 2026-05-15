@@ -1,6 +1,6 @@
 # compose入门
 
- @Composable 声明compose函数，用来定义UI,如果需要预览，需要@Preview注解
+1. @Composable 声明compose函数，用来定义UI,如果需要预览，需要@Preview注解
 
 
 
@@ -16,7 +16,7 @@
 | `TextField` |  输入框  |            用户名、密码输入             |
 | `Checkbox`  |  选择框  |              同意协议勾选               |
 
-容器
+ 2. 容器
 
 Box容器 层叠容器
 
@@ -62,7 +62,7 @@ modifier = Modifier.padding(innerPadding)
 
 
 
-
+3.实现
 
 @Composable 
 
