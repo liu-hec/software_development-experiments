@@ -65,7 +65,7 @@ companion object {
 
 3.  **完成权限请求方法**
 
-![image-20260515174015712](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260515174015712.png)
+<img width="1143" height="777" alt="image" src="https://github.com/user-attachments/assets/751ac7e7-a4a8-4c55-b5e1-218d1d97b782" />
 
 
 
@@ -123,7 +123,7 @@ val imageAnalyzer = ImageAnalysis.Builder().build().also {
 } //每一帧画面都拿去算亮度，然后打印日志
 ```
 
-![image-20260515185121064](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260515185121064.png)
+<img width="1132" height="600" alt="image" src="https://github.com/user-attachments/assets/f0eaee93-ac47-41b7-8e22-402769640ab0" />
 
 
 
@@ -134,13 +134,13 @@ recording = videoCapture.output.prepareRecording(...)
     .start(...) //录制
 ```
 
-![image-20260515185955556](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260515185955556.png)
+<img width="1151" height="806" alt="image" src="https://github.com/user-attachments/assets/e2e807a6-e951-4d41-a2e9-980375de9519" />
 
  
 
   存放在MediaStore中，可以发现vedio录制成功
 
-![image-20260515190031059](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260515190031059.png)
+<img width="485" height="269" alt="image" src="https://github.com/user-attachments/assets/520b05e9-e24a-498b-9ef9-37b9fce0e90d" />
 
 
 
