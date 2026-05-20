@@ -160,25 +160,25 @@ fig.tight_layout()
 
 
 
-![png](PyAndDataAnalysis_files/PyAndDataAnalysis_18_1.png)
+![image-20260520151611902](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151611902.png)
     
 
 
 
 
-![png](PyAndDataAnalysis_files/PyAndDataAnalysis_18_2.png)
+![image-20260520151623095](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151623095.png)
     
 
 
 
 
-![png](PyAndDataAnalysis_files/PyAndDataAnalysis_18_3.png)
+![image-20260520151632185](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151632185.png)
     
 
 
 
 
-![png](PyAndDataAnalysis_files/PyAndDataAnalysis_18_4.png)
+![image-20260520151639919](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151639919.png)
     
 
 ​        如何使用matplotlib画图？
@@ -248,7 +248,7 @@ plt.show()
 ```
 
 
-![png](PyAndDataAnalysis_files/PyAndDataAnalysis_19_0.png)
+![image-20260520151730101](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151730101.png)
     
 
 
