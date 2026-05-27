@@ -25,17 +25,22 @@ class RecognitionListViewModel : ViewModel() {
     // This is a LiveData field. Choosing this structure because the whole list tend to be updated
     // at once in ML and not individual elements. Updating this once for the entire list makes
     // sense.
+    //
     private val _recognitionList = MutableLiveData<List<Recognition>>()
+    //可变数据
     val recognitionList: LiveData<List<Recognition>> = _recognitionList
-
+   //更新数据
     fun updateData(recognitions: List<Recognition>){
         _recognitionList.postValue(recognitions)
+       //postValue() 正是用来从子线程安全地向主线程（UI线程）分发数据的工具。
+       //图像分析往往子线程处理
     }
 
 }
 
 /**
  * Simple Data object with two fields for the label and probability
+    数据类data 包含label和confidence两个字段
  */
 data class Recognition(val label:String, val confidence:Float) {
 

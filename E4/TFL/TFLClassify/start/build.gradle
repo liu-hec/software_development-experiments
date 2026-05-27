@@ -35,6 +35,12 @@ android {
         versionCode 1
         versionName "1.0"
 
+        // Make sure the APK includes both 32-bit and 64-bit ARM native libraries.
+        // This helps avoid the "not adapted to 64-bit processors" install warning.
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -72,8 +78,14 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     // Specify explicit versions for TensorFlow Lite artifacts
     // TensorFlow Lite support & metadata: use stable versions available on Maven Central
-    implementation 'org.tensorflow:tensorflow-lite-metadata:0.3.0'
-    implementation 'org.tensorflow:tensorflow-lite-support:0.3.1'
+    implementation('org.tensorflow:tensorflow-lite-metadata:0.3.0') {
+        exclude group: 'org.tensorflow', module: 'tensorflow-lite'
+        exclude group: 'org.tensorflow', module: 'tensorflow-lite-api'
+    }
+    implementation('org.tensorflow:tensorflow-lite-support:0.3.1') {
+        exclude group: 'org.tensorflow', module: 'tensorflow-lite'
+        exclude group: 'org.tensorflow', module: 'tensorflow-lite-api'
+    }
     // Align lifecycle versions to avoid duplicate classes
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
@@ -89,6 +101,10 @@ dependencies {
     implementation "androidx.activity:activity-ktx:1.1.0"
 
     // TODO 5: Optional GPU Delegates
+    implementation('org.tensorflow:tensorflow-lite-gpu:2.17.0') {
+        exclude group: 'org.tensorflow', module: 'tensorflow-lite'
+        exclude group: 'org.tensorflow', module: 'tensorflow-lite-api'
+    }
 
 
     testImplementation 'junit:junit:4.13'

@@ -39,12 +39,14 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
+import org.tensorflow.lite.gpu.CompatibilityList
 import org.tensorflow.lite.examples.classification.ml.FlowerModel
 import org.tensorflow.lite.examples.classification.ui.RecognitionAdapter
 import org.tensorflow.lite.examples.classification.util.YuvToRgbConverter
 import org.tensorflow.lite.examples.classification.viewmodel.Recognition
 import org.tensorflow.lite.examples.classification.viewmodel.RecognitionListViewModel
 import org.tensorflow.lite.support.image.TensorImage
+import org.tensorflow.lite.support.model.Model as TFLiteModel
 import java.util.concurrent.Executors
 
 
@@ -67,21 +69,26 @@ class MainActivity : AppCompatActivity() {
     private lateinit var imageAnalyzer: ImageAnalysis // Analysis use case, for running ML code
     private lateinit var camera: Camera
     private val cameraExecutor = Executors.newSingleThreadExecutor()
-
+    //RecyclerView
     // Views attachment
     private val resultRecyclerView by lazy {
-        findViewById<RecyclerView>(R.id.recognitionResults) // Display the result of analysis
-    }
+        findViewById<RecyclerView>(R.id.recognitionResults) // 对应UI的下面的显示 Display the result of analysis
+    } //by lazy{ 懒加载后赋值的内容 }
     private val viewFinder by lazy {
         findViewById<PreviewView>(R.id.viewFinder) // Display the preview image from Camera
     }
 
     // Contains the recognition result. Since  it is a viewModel, it will survive screen rotations
     private val recogViewModel: RecognitionListViewModel by viewModels()
-
+//    viewModels 是 AndroidX 的函数
+//    它会：
+//    第一次访问时创建 ViewModel
+//    保存到 ViewModelStore（系统管理）
+//    屏幕旋转时，系统自动恢复同一个 ViewModel 实例
+//    Activity 销毁时才真正释放
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)//加载主ui
 
         // Request camera permissions
         if (allPermissionsGranted()) {
@@ -93,6 +100,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Initialising the resultRecyclerView and its linked viewAdaptor
+        //将适配器和上下文传入创建实例 viewAdapter是具体实例类的引用
         val viewAdapter = RecognitionAdapter(this)
         resultRecyclerView.adapter = viewAdapter
 
@@ -103,6 +111,7 @@ class MainActivity : AppCompatActivity() {
         // Attach an observer on the LiveData field of recognitionList
         // This will notify the recycler view to update every time when a new list is set on the
         // LiveData field of recognitionList.
+       //观察数据的变换并提交
         recogViewModel.recognitionList.observe(this,
             Observer {
                 viewAdapter.submitList(it)
@@ -113,6 +122,7 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * Check all permissions are granted - use for Camera permission in this example.
+     * 权限校验
      */
     private fun allPermissionsGranted(): Boolean = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(
@@ -215,7 +225,18 @@ class MainActivity : AppCompatActivity() {
         // method is called.
 
         // TODO 6. Optional GPU acceleration
-        private val flowerModel = FlowerModel.newInstance(ctx)
+        private val flowerModel: FlowerModel by lazy {
+            val compatList = CompatibilityList()
+            val options = if (compatList.isDelegateSupportedOnThisDevice) {
+                Log.d(TAG, "This device is GPU Compatible")
+                TFLiteModel.Options.Builder().setDevice(TFLiteModel.Device.GPU).build()
+            } else {
+                Log.d(TAG, "This device is GPU Incompatible")
+                TFLiteModel.Options.Builder().setNumThreads(4).build()
+            }
+
+            FlowerModel.newInstance(ctx, options)
+        }
 
 
 
