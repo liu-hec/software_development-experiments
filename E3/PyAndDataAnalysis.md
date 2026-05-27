@@ -160,25 +160,25 @@ fig.tight_layout()
 
 
 
-![image-20260520151611902](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151611902.png)
+<img width="635" height="462" alt="image" src="https://github.com/user-attachments/assets/3279aab8-aa89-4b4a-a293-dcad4913fd44" />
     
 
 
 
 
-![image-20260520151623095](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151623095.png)
+<img width="687" height="476" alt="image" src="https://github.com/user-attachments/assets/50f994e7-99a4-4f47-a881-60e44ec023f6" />
     
 
 
 
 
-![image-20260520151632185](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151632185.png)
+<img width="677" height="482" alt="image" src="https://github.com/user-attachments/assets/4f73add5-5cb6-4c28-9337-5e8f3f1ea25a" />
     
 
 
 
 
-![image-20260520151639919](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151639919.png)
+<img width="1203" height="388" alt="image" src="https://github.com/user-attachments/assets/d77b3212-bc54-4782-a52d-0882de498676" />
     
 
 ​        如何使用matplotlib画图？
@@ -248,7 +248,7 @@ plt.show()
 ```
 
 
-![image-20260520151730101](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520151730101.png)
+<img width="1037" height="615" alt="image" src="https://github.com/user-attachments/assets/4f28302c-4f5c-41f7-8978-ee2418b1e606" />
     
 
 
@@ -271,4 +271,4 @@ plt.show()
 
 ```
 
-![image-20260520150721251](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260520150721251.png)
+<img width="1051" height="602" alt="image" src="https://github.com/user-attachments/assets/f20da8b9-bf9a-46ae-9638-2dafc3843d43" />
