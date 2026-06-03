@@ -28,7 +28,7 @@
 
 ​    界面布局，含 PreviewView + RecyclerView 在主xml中实现
 
-![image-20260527105213931](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260527105213931.png)
+<img width="756" height="603" alt="image" src="https://github.com/user-attachments/assets/a541e4ad-dedd-463e-be9e-9b5e04ebffc8" />
 
 ​        RecyclerView 单条识别结果的 Item 布局（Data Binding），将recognition数据和recognition_item的UI视图绑定。
 
@@ -138,30 +138,30 @@ private val flowerModel: FlowerModel by lazy {
 
   虚拟机情况
 
-![image-20260527114510235](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260527114510235.png)
+<img width="671" height="854" alt="image" src="https://github.com/user-attachments/assets/f3c54714-f9c5-4ace-930b-478d392faa67" />
 
 ​    导出start的apk文件，在真机运行.
 
 rose
 
-![image-20260527123758820](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260527123758820.png)
+<img width="449" height="899" alt="image" src="https://github.com/user-attachments/assets/18394c87-06a0-4fec-a4a1-2ccafdb578d9" />
 
 向日葵
 
-![image-20260527123807680](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260527123807680.png)
+<img width="440" height="804" alt="image" src="https://github.com/user-attachments/assets/d1700bfe-4380-4f63-8158-d009c63d1c49" />
 
 郁金香
 
-![image-20260527123815485](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260527123815485.png)
+<img width="422" height="845" alt="image" src="https://github.com/user-attachments/assets/bf055727-8a77-4c5c-9f5f-35e669111f12" />
 
 
 
 蒲公英 
 
-![image-20260527123823030](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260527123823030.png)
+<img width="433" height="882" alt="image" src="https://github.com/user-attachments/assets/5f6d8e30-70a7-4329-94fd-636cdeeb9ef5" />
 
   雏菊daisy
 
-![image-20260527123829942](C:/Users/86152/AppData/Roaming/Typora/typora-user-images/image-20260527123829942.png)
+<img width="424" height="899" alt="image" src="https://github.com/user-attachments/assets/e801f5b0-e8ac-4185-9085-5fc0f1aeacbf" />
 
  
