@@ -1068,13 +1068,17 @@ input_data = tf.cast(images, input_details["dtype"]).numpy() #类型转换
 
 ​       将model.tflite 修改为FlowerModel.tflite，替换到E4的start 模块中。 导出apk，下载到手机中进行测试。
 
-​        
+​        <img width="410" height="911" alt="image" src="https://github.com/user-attachments/assets/353668bc-25a4-4a2e-af47-d54ebeb1c1b0" />
+
+
+<img width="410" height="902" alt="image" src="https://github.com/user-attachments/assets/7b1de15a-9177-4e85-86e4-4ab85b9326dc" />
 
 
 
+<img width="411" height="903" alt="image" src="https://github.com/user-attachments/assets/0b5d58af-1547-403a-adcb-7ce44f8775a5" />
 
 
-
+<img width="417" height="910" alt="image" src="https://github.com/user-attachments/assets/d945f966-e0d8-47ef-9710-ae883eb1c20f" />
 
 
 
