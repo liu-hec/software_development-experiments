@@ -15,4 +15,3 @@ Software Development Practice Course Experimental Assignment
 | E5     | [software_development-experiments/E5/README.md at master · liu-hec/software_development-experiments](https://github.com/liu-hec/software_development-experiments/blob/master/E5/README.md) |
 | E6     | [software_development-experiments/E6/RPS/README.md at master · liu-hec/software_development-experiments](https://github.com/liu-hec/software_development-experiments/blob/master/E6/RPS/README.md) |
 
-
